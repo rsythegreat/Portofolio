@@ -67,11 +67,17 @@
               <div class="p-3 bg-slate-950 border border-slate-800 flex items-center justify-between">
                 <div>
                   <div class="text-[10px] font-mono-tech text-slate-400">EMAIL RESMI</div>
-                  <div class="text-xs font-mono-tech text-cyan-300">rasya.official@gmail.com</div>
+                  <a
+                    href="mailto:hidayatrasya2@gmail.com"
+                    class="text-xs font-mono-tech text-cyan-300 hover:underline"
+                    title="Kirim email langsung"
+                  >
+                    hidayatrasya2@gmail.com
+                  </a>
                 </div>
                 <button
-                  @click="copyToClipboard('rasya.official@gmail.com', 'email')"
-                  class="px-2.5 py-1 bg-slate-900 border border-slate-700 hover:border-cyan-400 text-[10px] font-pixel text-slate-300 hover:text-cyan-300"
+                  @click="copyToClipboard('hidayatrasya2@gmail.com', 'email')"
+                  class="px-2.5 py-1 bg-slate-900 border border-slate-700 hover:border-cyan-400 text-[10px] font-pixel text-slate-300 hover:text-cyan-300 cursor-pointer"
                 >
                   {{ copiedField === 'email' ? 'TERSALIN!' : 'SALIN' }}
                 </button>
@@ -79,26 +85,30 @@
 
               <!-- GitHub -->
               <a
-                href="https://github.com"
+                href="https://github.com/rsythegreat"
                 target="_blank"
-                class="p-3 bg-slate-950 border border-slate-800 hover:border-purple-400 flex items-center justify-between transition-colors block group"
+                rel="noopener noreferrer"
+                class="p-3 bg-slate-950 border border-slate-800 hover:border-purple-400 flex items-center justify-between transition-colors block group cursor-pointer"
+                title="Buka profil GitHub Rasya"
               >
                 <div>
                   <div class="text-[10px] font-mono-tech text-slate-400">GITHUB REPOSITORI</div>
-                  <div class="text-xs font-mono-tech text-purple-300 group-hover:text-purple-200">github.com/rasya-dev</div>
+                  <div class="text-xs font-mono-tech text-purple-300 group-hover:text-purple-200">github.com/rsythegreat</div>
                 </div>
                 <span class="text-purple-400 font-pixel text-xs">↗</span>
               </a>
 
               <!-- LinkedIn -->
               <a
-                href="https://linkedin.com"
+                href="https://www.linkedin.com/in/rasya-naufal-h-903517446"
                 target="_blank"
-                class="p-3 bg-slate-950 border border-slate-800 hover:border-cyan-400 flex items-center justify-between transition-colors block group"
+                rel="noopener noreferrer"
+                class="p-3 bg-slate-950 border border-slate-800 hover:border-cyan-400 flex items-center justify-between transition-colors block group cursor-pointer"
+                title="Buka profil LinkedIn Rasya"
               >
                 <div>
                   <div class="text-[10px] font-mono-tech text-slate-400">LINKEDIN KONEKSI</div>
-                  <div class="text-xs font-mono-tech text-cyan-300 group-hover:text-cyan-200">linkedin.com/in/rasyadev</div>
+                  <div class="text-xs font-mono-tech text-cyan-300 group-hover:text-cyan-200 truncate max-w-[210px] sm:max-w-xs">linkedin.com/in/rasya-naufal-h-903517446</div>
                 </div>
                 <span class="text-cyan-400 font-pixel text-xs">↗</span>
               </a>
@@ -107,11 +117,11 @@
               <div class="p-3 bg-slate-950 border border-slate-800 flex items-center justify-between">
                 <div>
                   <div class="text-[10px] font-mono-tech text-slate-400">DISCORD / TELEGRAM</div>
-                  <div class="text-xs font-mono-tech text-yellow-300">@rasyadev</div>
+                  <div class="text-xs font-mono-tech text-yellow-300">12asyallknow</div>
                 </div>
                 <button
-                  @click="copyToClipboard('@rasyadev', 'discord')"
-                  class="px-2.5 py-1 bg-slate-900 border border-slate-700 hover:border-yellow-400 text-[10px] font-pixel text-slate-300 hover:text-yellow-300"
+                  @click="copyToClipboard('12asyallknow', 'discord')"
+                  class="px-2.5 py-1 bg-slate-900 border border-slate-700 hover:border-yellow-400 text-[10px] font-pixel text-slate-300 hover:text-yellow-300 cursor-pointer"
                 >
                   {{ copiedField === 'discord' ? 'TERSALIN!' : 'SALIN' }}
                 </button>
